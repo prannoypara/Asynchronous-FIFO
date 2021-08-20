@@ -1,6 +1,6 @@
 # Asynchronous-FIFO
 
-In this repo, I have uploaded the implementation of an asynchronous FIFO. The DEPTH of the FIFO is 16 blocks and each block is of 8 bits wide i.e., it is a 16 x 8 async_fifo.
+In this repo, I have uploaded the implementation of an asynchronous FIFO. The DEPTH of the FIFO is **16 blocks** and **each block is of 8 bits wide** i.e., **it is a 16 x 8 async_fifo**.
 
 Asynchronous FIFO is used when the transmitter and reciever are in different clock domains. When the reciever is operating at low frequency compared to transmitter, then we need to store the blocks that was sent by the transmitter, otherwise, they will be lost. Hence, we use FIFO in between them so that the RECIEVER can take blocks from FIFO whenver it needs.
 
